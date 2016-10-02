@@ -1,0 +1,225 @@
+
+
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+::selection {
+	color: #fff;
+	background: #f676b2; /* Safari */
+}
+::-moz-selection {
+	color: #fff;
+	background: #f676b2; /* Firefox */
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background: url(../images/bg.png) repeat;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight:300;
+	text-align: left;
+	text-decoration: none;
+}
+
+#wrapper {
+	/* Center wrapper perfectly */
+	width: 250px;
+	height: 400px;
+	position: absolute;
+        top: 50%;
+	margin-left: 290px;
+	margin-top: 50px;
+}
+
+
+/*******************
+LOGIN FORM
+*******************/
+
+.login {
+	width: 800px;
+	
+	position: relative;
+	z-index:5;
+	
+	background: #f3f3f3;
+        border: 3px solid #3683a3;
+	border-radius: 5px;
+	
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/*******************
+HEADER
+*******************/
+
+.login .header {
+	padding: 40px 30px 30px 30px;
+}
+
+.login .header h1 {
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 28px;
+	line-height:34px;
+	color: #414848;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	margin-bottom: 10px;
+}
+form.login input[type=radio]
+{
+     width: 10px;
+    color: #505050;
+    
+}
+form.login input[type=text]{
+    width: 140px;
+    color: #505050;
+    float: left;
+    margin-right: 5px;
+}
+form.login input[type=email]{
+    width: 140px;
+    color: #505050;
+    float: left;
+    margin-right: 5px;
+}
+form.login input[type=password]{
+    width: 140px;
+    color: #505050;
+    float: left;
+    margin-right: 5px;
+}
+td
+{
+    font-family:'Bree Serif', serif;
+    color: #2d2626;
+    
+}
+/*******************
+CONTENT
+*******************/
+
+.login .content {
+	padding: 0 30px 25px 30px;
+}
+
+/* Input field */
+
+.login .content .input[type=text]{
+	width: 190px;
+	height: 30px;
+	
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #9d9e9e;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+}
+.login .content .input[type=password]{
+	width: 190px;
+	height: 30px;
+	
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #9d9e9e;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+}
+.login .content .input[type=email],select{
+	width: 190px;
+	height: 30px;
+	
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #9d9e9e;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+}
+
+/*******************
+FOOTER
+*******************/
+
+.login .footer {
+	padding: 25px 30px 40px 30px;
+	overflow: auto;
+	
+	background: #d4dedf;
+	border-top: 1px solid #fff;
+	
+	box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+	-moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+	-webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+}
+/* Login button */
+
+.login .footer .button {
+	float:right;
+	padding: 11px 25px;
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+        font-size: 18px;
+	color: #fff;
+	text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
+	background: #56c2e1;
+	border: 1px solid #46b3d3;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+	-moz-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+	-webkit-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+}
+
+.login .footer .button:hover {
+	background: #3f9db8;
+	border: 1px solid rgba(256,256,256,0.75);
+	
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.login .footer .button:focus {
+	position: relative;
+	bottom: -1px;
+	
+	background: #56c2e1;
+	
+	box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+	-moz-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+	-webkit-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+}
+

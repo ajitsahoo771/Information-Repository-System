@@ -1,0 +1,28 @@
+<html>
+<head>
+	<script>
+		function getVal(chk, adto) {
+  var ad=[];
+  var checks = chk.form[chk.name];
+  for (i=0;i<checks.length;i++) {
+    if (checks[i].checked) {
+      ad.push(checks[i].value);
+    }
+  }
+  document.getElementById(adto).value = (ad.length>0)?ad.join(" "):"";
+
+}
+	</script>
+</head>
+<body>
+    <form>Select Your Hobbies:</br>
+<input type="checkbox" name="chk[]" value="Cricket" id="chk0" onclick="getVal(this, 'inp0')">Cricket<br>
+<input type="checkbox" name="chk[]" value="Football" id="chk1" onclick="getVal(this, 'inp0')">Football<br>
+<input type="checkbox" name="chk[]" value="VolleyBall" id="chk2" onclick="getVal(this, 'inp0')">VolleyBall<br>
+<input type="checkbox" name="chk[]" value="BasketBall" id="chk3" onclick="getVal(this, 'inp0')">BasketBall<br>
+<br>
+Your Hobbies are:<input type="text" name="inp" id="inp0" style="width:300px;height:20px" >
+</form>
+	
+</body>
+</html>

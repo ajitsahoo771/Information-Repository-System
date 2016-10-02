@@ -1,0 +1,92 @@
+.gallery{
+	padding-bottom:40px;
+}
+.gallery li{
+	margin-right:31px;
+	float:left;
+	margin-bottom:40px;
+}
+.gallery img{
+	padding: 20px;
+	background-image: url(../images/debut_light.png);
+	
+}
+.gallery li:nth-child(3),.gallery li:nth-child(6),.gallery li:nth-child(9){
+	margin-right:0px;
+}
+
+#main1
+{
+    display:block;
+    height: 1000px; 
+}
+#left
+{
+     margin-left: 10px;
+     background-color: #f7f7f7;
+     border-radius: 10px;
+     height:auto;
+     margin-top: 10px;
+     width:300px;
+     margin-bottom:10px;
+     float: left;
+}
+#right
+{
+     margin-right: 10px;
+     background-color: #f7f7f7;
+     border-radius: 10px;
+     height:auto;
+     margin-top: 10px;
+     width:300px;
+     margin-bottom:10px;
+     float: right;
+}
+
+.profilee
+{
+    width:700px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: #e5f0f6;
+     height:auto;
+      border-radius: 10px;
+      float: left;
+      height:700px;
+}
+font
+{
+    font-family:'OpenSans-Regular';
+    color: #4a88fa;
+    font-size: 19px;
+    margin-top: 5px;
+    padding:10px 15px;
+}
+p.title
+{
+    font-family:'OpenSans-Regular';
+    color: #ffffff;
+    font-size: 18px;
+    position:relative;
+    display:block;
+    padding:10px 15px;
+    margin-bottom: -1px;
+    background-color: #60a8eb;
+    border:1px solid #DDD;
+}
+
+p.contentt
+{padding:10px 15px;
+   
+    color: #1888ff;
+    font-size:23px;
+    font-family: 'Bree Serif', serif;
+}
+p.contenttt
+{
+    padding:10px 45px;
+    color: #080808;
+    font-size:18px;
+    font-family: 'Bree Serif', serif;
+}

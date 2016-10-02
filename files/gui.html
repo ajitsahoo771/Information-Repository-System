@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	function changeCase1() {
+		var res = document.fo.result.value;
+		if(res == "Good Results" || res == "GOOD RESULTS")
+			document.fo.result.value = "good results";
+		if(res == "Bad Results" || res == "BAD RESULTS")
+			document.fo.result.value = "bad results";
+	}
+	function changeCase2() {
+		var res = document.fo.result.value;
+		if(res == "Good Results" || res == "good results")
+			document.fo.result.value = "GOOD RESULTS";
+		if(res == "Bad Results" || res == "bad results")
+			document.fo.result.value = "BAD RESULTS"
+	}
+	function displayResult1() {
+		document.fo.result.value = "Good Results"; 
+	}
+	function displayResult2() {
+		document.fo.result.value = "Bad Results"; 
+	}
+	</script>
+</head>
+<body>
+<form name="fo">
+	<input type="button" onclick="displayResult1()" name="good" value="Good Results"/>
+	<input type="button" onclick="displayResult2()" name="bad" value="Bad Results"/><br>
+	<b>RESULTS:</b><input type="text" name="result" disabled/><br>
+	<input type="button" name="lower" value="Lower Case" onclick="changeCase1()"/>
+	<input type="button" name="upper" value="Upper Case " onclick="changeCase2()"/><br>
+	<input type="reset">
+</form>
+</body>
+</html>

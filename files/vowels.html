@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>find number of vowels in a string in JavaScript</title>
+<script type="text/javascript">
+function GetVowels() {
+var str = document.getElementById('txtname').value;
+var count = 0, total_vowels="";
+for (var i = 0; i < str.length; i++) {
+if (str.charAt(i).match(/[a-zA-Z]/) != null) {
+
+if (str.charAt(i).match(/[aeiouAEIOU]/))
+{
+total_vowels = total_vowels + str.charAt(i);
+count++;
+}
+}
+}
+document.getElementById('vowels').value = total_vowels;
+document.getElementById('vcount').value = count;
+}
+</script>
+</head>
+<body>
+<div >
+<table border="1px" cellspacing="0" width="30%" style="background-color: #FF6600; color:White">
+<tr><td colspan="2" align="center"><b>Get Vowels from String</b></td></tr>
+<tr>
+<td>Enter Text :</td>
+<td><input type='text' id='txtname' /></td>
+</tr>
+<tr>
+<td>Vowels Count :</td>
+<td><input type='text' readonly="readonly" id='vcount'/></td>
+</tr>
+<tr>
+<td>Total Vowels :</td>
+<td><input type='text' readonly="readonly" id='vowels' /></td>
+</tr>
+<tr>
+<td></td>
+<td><input type='button' value='Get Vowels Count' onclick="javascript:GetVowels();" /></td>
+</tr>
+</table>
+</div>
+</body>
+</html>

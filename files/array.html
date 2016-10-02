@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+var counter=1;
+var number= [];
+
+var smallest=0;
+
+while (counter <= 5){
+
+number.push(Number(window.prompt("Enter Numbers 1-5 Number:"+counter+"."),5));
+
+counter++;
+}
+
+Array.prototype.min = function () {
+    return Math.min.apply(Math, this);
+};
+
+
+smallest = number.min();
+document.writeln("<h1>Smallest number is " +smallest+ "</h1>");
+
+
+</script>
+</body>
+</html>
